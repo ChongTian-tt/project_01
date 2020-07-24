@@ -17,7 +17,7 @@ doc/*.txt
 doc/**/*.pdf
 
 #忽略index.js
-index.js
+#index.js
 
 #忽略文件夹
 node_modules/
