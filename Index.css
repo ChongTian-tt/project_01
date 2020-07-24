@@ -2,5 +2,72 @@ html,
 body {
     margin: 0;
     padding: 0;
+    background-color: ccc;
+}
+
+
+.box {
+    width: 500px;
+    height: 500px;
     background-color: aqua;
 }
+
+.son {
+    width: 200px;
+    height: 200px;
+    background-color: hotpink;
+}
+
+/* 第一种:  使父盒子table-cell,子盒子转行内块,并设置相应的属性*/
+/* .box {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.son {
+    display: inline-block;
+
+} */
+
+/* 第二种: 子绝父相,这里有很多种方法,2.1  margin:auto */
+/* 
+.box {
+    position: relative;
+}
+
+.son {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+} */
+
+
+/* 2.2   子盒子 top: 250px; margin-top: -100px; left: 250px; margin-left: -100px; */
+/* .box {
+    position: relative;
+}
+
+.son {
+    position: absolute;
+    top: 250px;
+    margin-top: -100px;
+    left: 250px;
+    margin-left: -100px;
+} */
+
+
+/* 2.3  子盒子 平移 */
+/* .box {position: relative;
+}
+
+.son {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
